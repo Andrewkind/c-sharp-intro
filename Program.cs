@@ -7,63 +7,53 @@ namespace c_sharp_intro
         static void Main(string[] args)
         {
 
-            // String datatype
-            string myString = "Hello I am a string";
+            // Logical operators.
 
-            // String datatype
-            int myInt = 42;
+            // OR will evaluate to TRUE if EITHER side is TRUE.
+            Console.WriteLine( true || true ); // True. // || is OR
+            Console.WriteLine( false || true ); // True.
+            Console.WriteLine( false || false ); // False.
 
-            // double datatype
-            double myDouble = 33.666;
+            // AND will evaluate to TRUE only if BOTH sides are TRUE.
+            Console.WriteLine( true && true ); // True. // && is AND
+            Console.WriteLine( false && true ); // False.
+            Console.WriteLine( false && false ); // False.
 
-            // bool datatype
-            bool myBool = true;
+            // How does this behave with different data-types?
+            // Console.WriteLine( true && 1 ); // It DOESN'T!
 
-            // Multiplication operator
-            Console.WriteLine(myInt * 2); // 84
-
-            // Subtraction operator is "-" (minus.)
-            Console.WriteLine(myInt - 10);
-
-            // Division operator
-            Console.WriteLine(myInt / 2);
-
-            // Modulus operator
-            Console.WriteLine(myInt % 13);
-
-            // Addition operator
-            // Note: This is ALSO the concatenation operator.
-            Console.WriteLine(myInt + 8);
-
-            // Addition operator
-            Console.WriteLine(myInt + 8);
-
-            Console.WriteLine("3" + "3"); // 33
-
-            Console.WriteLine("3" + 3); // 33
-
-            Console.WriteLine(3 + 6 + "3"); // 93
-
-            myInt = myInt + 2; // 44
-            Console.WriteLine(myInt); // 44
-
+            // Comparative operators
             
-            // *** Shorthands
+            // "Equal to" check.
+            Console.WriteLine( false == false ); // True.
+            Console.WriteLine( true == false ); // False.
+            Console.WriteLine( 2.25 == 2.25 ); // True.
+            Console.WriteLine( 2.25 == 3.14 ); // False.
+            // Console.WriteLine( 3.14 == "3.14" ); // Cannot check two diff. types!
 
-            // Increment
-            myInt++; // Same as typing myInt = myInt + 1;
-            Console.WriteLine(myInt); 
+            // "Greater than" check.
+            Console.WriteLine( 6 > 7 ); // False.
+            Console.WriteLine( 10 > 5 ); // True.
 
-            // Decrement
-            myInt--; // Same as typing myInt = myInt - 1;
-            Console.WriteLine(myInt); 
+            // "Less than" check.
+            Console.WriteLine( 6 < 7 ); // True.
+            Console.WriteLine( 10 < 5 ); // False.
 
-            myInt += 3; // Same as typing myInt = myInt + 3;
-            Console.WriteLine(myInt);
+            // "Greater-than-or-equal-to" check.
+            Console.WriteLine( 5 >= 5 ); // True.
+            Console.WriteLine( 10 >= 5 ); // True.
+            Console.WriteLine( 4 >= 5 ); // False.
 
+            // "Less-than-or-equal-to" check.
+            Console.WriteLine( 5 <= 5 ); // True.
+            Console.WriteLine( 10 <= 5 ); // False.
+            Console.WriteLine( 4 <= 5 ); // True.
 
-            myInt -= 6; // Same as typing myInt = myInt - 6;
-            Console.WriteLine(myInt);
+            // "NOT equal to" check.
+            Console.WriteLine( false != false ); // False.
+            Console.WriteLine( true != false ); // True.
+            Console.WriteLine( 5 != 5 ); // False.
+            Console.WriteLine( 5 != 10 ); // True.
 
         }
     }
