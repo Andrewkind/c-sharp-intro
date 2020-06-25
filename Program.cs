@@ -20,7 +20,7 @@ namespace c_sharp_intro
             bool myBool = true;
 
             // Multiplication operator
-            Console.WriteLine( myInt * 2 ); // 84
+            Console.WriteLine(myInt * 2); // 84
 
             // Subtraction operator is "-" (minus.)
             Console.WriteLine(myInt - 10);
@@ -32,16 +32,39 @@ namespace c_sharp_intro
             Console.WriteLine(myInt % 13);
 
             // Addition operator
+            // Note: This is ALSO the concatenation operator.
             Console.WriteLine(myInt + 8);
 
             // Addition operator
             Console.WriteLine(myInt + 8);
+
+            Console.WriteLine("3" + "3"); // 33
+
+            Console.WriteLine("3" + 3); // 33
+
+            Console.WriteLine(3 + 6 + "3"); // 93
+
+            myInt = myInt + 2; // 44
+            Console.WriteLine(myInt); // 44
+
             
-            Console.WriteLine( "3" + "3" ); // 33
+            // *** Shorthands
 
-            Console.WriteLine( "3" + 3 ); // 33
+            // Increment
+            myInt++; // Same as typing myInt = myInt + 1;
+            Console.WriteLine(myInt); 
 
-            Console.WriteLine( 3 + 6 + "3" ); // 93
+            // Decrement
+            myInt--; // Same as typing myInt = myInt - 1;
+            Console.WriteLine(myInt); 
+
+            myInt += 3; // Same as typing myInt = myInt + 3;
+            Console.WriteLine(myInt);
+
+
+            myInt -= 6; // Same as typing myInt = myInt - 6;
+            Console.WriteLine(myInt);
+
         }
     }
 }
