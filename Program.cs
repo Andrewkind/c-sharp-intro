@@ -6,23 +6,15 @@ namespace c_sharp_intro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number:");
-            int userInt = Int32.Parse(Console.ReadLine());
-            if (userInt > 10)
+            // 2 dimensional array!
+            string[,] topics = {{"cat","dog","frog","hedgehog"},
+                                {"zebra","giraffe","lion","elephant"},
+                                {"dolphin","octopus","shark","whale"}};
+            // We can use a foreach to iterate through the list of lists, one list at a time.
+            foreach( string topic in topics )
             {
-                Console.WriteLine("Greater than 10.");
-            }
-            else if (userInt > 5)
-            {
-                Console.WriteLine("Greater than 5 but less than 11.");
-            }
-            else if (userInt < 0)
-            {
-                Console.WriteLine("A negative number.");
-            }
-            else
-            {
-                Console.WriteLine("Number is between 0 and 5.");
+                // Output the current animal!
+                Console.WriteLine( "This animal is: {0}", topic );
             }
         }
     }
